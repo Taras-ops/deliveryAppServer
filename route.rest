@@ -1,0 +1,40 @@
+GET http://127.0.0.1:5000/goods
+
+###
+
+GET http://127.0.0.1:5000/shops
+
+###
+
+POST http://127.0.0.1:5000/shops
+Content-Type: application/json
+
+{
+    "name": "McDonald's"
+}
+
+
+###
+POST http://127.0.0.1:5000/goods
+Content-Type: application/json
+
+{
+    "name": "Hamburger",
+    "shop": "647f38fc46087784a13e6954",
+    "imageName": "hamburger.jpg",
+    "price": 10
+}
+
+###
+
+PATCH http://127.0.0.1:5000/goods
+Content-Type: application/json
+
+{
+    "id": "647f3e080053982e92e07e17",
+    "price": 20
+}
+
+
+
+###
