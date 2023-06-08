@@ -8,6 +8,7 @@ const cors = require('cors')
 
 const goodRouter = require('./routes/goodRouter')
 const shopRouter = require('./routes/shopRouter')
+const orderRouter = require('./routes/orderRouter')
 
 const port = 5000
 
@@ -25,6 +26,7 @@ app.get('/', (req, res) => {
 
 app.use('/goods', goodRouter)
 app.use('/shops', shopRouter)
+app.use('/orders', orderRouter)
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

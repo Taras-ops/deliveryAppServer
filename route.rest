@@ -35,6 +35,20 @@ Content-Type: application/json
     "price": 20
 }
 
+###
+GET http://127.0.0.1:5000/orders
 
 
 ###
+POST http://127.0.0.1:5000/orders
+Content-Type: application/json
+
+{
+    "username": "Ivan",
+    "email": "ivan@gmail.com",
+    "phone": "0681386000",
+    "address": "Kharkiv",
+    "goods": [{
+        "_id": "6481f86c41d9dd88ee0a97df",
+    }]
+}

@@ -6,9 +6,9 @@ const shopModel = require('../models/shop')
 router.get('', async (req, res) => {
     try{
         const shops = await shopModel.find().populate('goods')
-        res.json(shops)
+        res.status(200).json(shops)
     } catch(err) {
-        res.send(err)
+        res.status(400).send(err)
         console.log(err)
     }
 })
